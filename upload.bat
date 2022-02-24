@@ -1,14 +1,13 @@
-#@echo off
+@echo off
 
 echo.
 echo                                      GitHub自动上传脚本
 echo ===================================================================================
 echo.
 
-#set /p change=%date:~0,10%
 echo.
 
-# git pull
+:: git pull ::从库中更新最新内容
 git add .
 git commit -m  %date:~0,10%
 git push
